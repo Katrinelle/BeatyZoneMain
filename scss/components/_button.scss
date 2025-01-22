@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  padding: 16px 32px;
+  color: var(--color-brand-light);
+  background: var(--color-brand-main);
+  border: 2px solid var(--color-brand-main);
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21.09px;
+  height: 53px;
+  transition: color 0.2s, background 0.2s;
+}
+.button:hover {
+  background: transparent;
+
+  border: 2px solid var(--color-brand-main);
+}

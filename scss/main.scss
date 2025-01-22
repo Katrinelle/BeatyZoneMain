@@ -1,0 +1,30 @@
+@import './utils/fonts';
+@import './utils/mixina';
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/variables';
+
+@import './base';
+
+@import './components/anime-icons';
+@import './components/button';
+@import './components/caurosel';
+@import './components/contacts-card';
+@import './components/form-terms';
+@import './components/input';
+@import './components/links';
+@import './components/mobile-menu';
+@import './components/modal';
+@import './components/pagination';
+@import './components/procedures-cards';
+@import './components/why-we-card';
+
+@import './layouts/about-us-section';
+@import './layouts/baner-section';
+@import './layouts/contacts-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/procedures-section';
+@import './layouts/section';
+@import './layouts/why-we-section';

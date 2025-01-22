@@ -1,0 +1,26 @@
+.link {
+  color: var(--color-brand-dark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+  white-space: nowrap;
+  text-decoration: none;
+  width: 73px;
+  height: 21px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  transition: color 0.2s, font-weight 0.2s;
+}
+
+.link:hover {
+  color: var(--color-brand-main);
+  font-weight: 700;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-size: 18px;
+  line-height: 1.17;
+}

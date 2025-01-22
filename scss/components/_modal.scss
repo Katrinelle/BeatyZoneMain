@@ -1,0 +1,121 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  padding: 20px;
+
+  background-color: var(--color-brand-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/footer-background.png');
+  border-radius: 48px;
+  overflow: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    font-size: 48px;
+
+    background: none;
+    color: var(--color-brand-light);
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-brand-light);
+    font-family: Play;
+    // width: 435px;
+    // height: 148px;
+
+    line-height: 1.3;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+      width: 435px;
+      height: 148px;
+      font-size: 64px;
+    }
+  }
+
+  &__group {
+    max-width: 310px;
+    max-height: 409px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 40px 62px 0 62px;
+    }
+  }
+
+  &__text {
+    color: var(--color-brand-light);
+    width: 274px;
+    height: 52px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.17;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    &--acent {
+      color: var(--color-brand-main);
+    }
+  }
+
+  &__button {
+    width: 290px;
+    text-align: center;
+    margin: 0 auto 8px;
+
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+  &__form-field {
+    margin-bottom: 32px;
+  }
+}

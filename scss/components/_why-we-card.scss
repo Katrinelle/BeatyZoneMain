@@ -1,0 +1,21 @@
+.why-we-card {
+  display: block;
+  box-shadow: 0 6px 5px rgba(168, 198, 245, 0.38);
+  color: var(--color-second-dark);
+  background-color: var(--color-brand-light);
+  border-radius: 32px;
+  width: 316px;
+  height: 181px;
+  padding: 24px 32px;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  align-content: flex-end;
+
+  &__icons {
+    fill: var(--color-brand-main);
+    margin: 8px auto;
+    text-align: center;
+    align-content: c;
+  }
+}

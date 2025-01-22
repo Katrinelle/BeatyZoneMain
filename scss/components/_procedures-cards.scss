@@ -1,0 +1,46 @@
+.procedures-card {
+  position: relative;
+  transition: transform 0.3s;
+  border-radius: 4px 120px 4px 120px;
+  height: 456px;
+  gap: 16px;
+
+  text-align: center;
+  align-content: flex-end;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--color-brand-dark) 101.39%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  overflow: hidden;
+
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__text {
+    color: var(--color-brand-light);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.18;
+    margin: 32px auto;
+    width: 152px;
+    height: 52px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,90 @@
+.baner-section {
+  padding: 90px 0;
+  background-image: url('../images/banerG.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 124px 0;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/banerG@2x.jpg');
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    transform: rotate(180deg);
+  }
+
+  &__container {
+    margin: 16px auto;
+
+    width: 100%;
+    max-width: 319px;
+
+    height: 100%;
+    max-height: 372px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 16px;
+      margin-left: 200px;
+      max-width: 529px;
+      max-height: 408px;
+    }
+  }
+  &__coment-title {
+    color: var(--color-brand-dark);
+    text-transform: capitalize;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.17;
+    width: 200px;
+    height: 21px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0 0 16px 0;
+    }
+  }
+  &__title {
+    color: var(--color-brand-main);
+    font-family: Play, sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 0.81;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 140px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    width: 220px;
+    &:hover {
+      color: var(--color-brand-dark);
+    }
+  }
+  &__coment {
+    width: 238px;
+    height: 36px;
+    color: var(--color-second-coment);
+    line-height: 1.5;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-top: 14px;
+    }
+  }
+}

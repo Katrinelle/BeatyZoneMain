@@ -1,0 +1,49 @@
+.section {
+  padding: 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 48px 0;
+  }
+}
+
+.title {
+  color: var(--color-brand-dark);
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.17;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 24px auto;
+  margin-top: 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-family: Play;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3125;
+    margin: 40px auto;
+  }
+
+  &__centered {
+    text-align: center;
+  }
+  &__acent {
+    color: var(--color-brand-main);
+    // text-transform: capitalize;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 74.05px;
+
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-family: Play;
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+}

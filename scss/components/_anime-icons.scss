@@ -1,0 +1,67 @@
+.anime-icons {
+  position: absolute;
+
+  &__1 {
+    fill: var(--color-footer);
+    position: relative;
+
+    top: 20px;
+    left: 250px;
+
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: -32px;
+      left: 667px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 336px;
+      left: 858px;
+    }
+  }
+
+  &__2 {
+    display: none;
+    fill: var(--color-brand-main);
+    position: relative;
+    top: -38px;
+    left: 1130px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__3 {
+    display: none;
+    fill: var(--color-second-notes);
+    position: relative;
+    top: 130px;
+    left: 1125px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0) scale(0.6);
+  }
+  to {
+    transform: rotate(180deg) scale(1.3);
+  }
+}
